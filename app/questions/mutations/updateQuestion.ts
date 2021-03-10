@@ -5,7 +5,7 @@ import * as z from "zod"
 const UpdateQuestion = z
   .object({
     id: z.number(),
-    name: z.string(),
+    text: z.string(),
   })
   .nonstrict()
 
