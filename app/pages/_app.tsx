@@ -29,6 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
   )
 }
 
+// UI when an error occured
 function RootErrorFallback({ error, resetErrorBoundary }: ErrorFallbackProps) {
   if (error instanceof AuthenticationError) {
     return <LoginForm onSuccess={resetErrorBoundary} />
